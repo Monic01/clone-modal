@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+}
+.modal-popup {
+  background-color: rgba(128, 123, 123, 0.493);
+  height: 100vh;
+  padding-top: 10px;
+  position: relative;
+}
+
+.modal {
+  background-color: white;
+  width: 400px;
+  height: auto;
+  min-height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+}
+.modal-close {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+.kakao-login {
+  width: 100%;
+  padding: 5px 0;
+  background-color: rgb(255, 238, 0);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.left,
+.right {
+  width: 150px;
+  height: 1px;
+  color: rgb(233, 236, 239);
+}
+
+.horizon-bar {
+  text-align: center;
+  margin: 0%;
+  display: flex;
+}
+.modal h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.login-container,
+.join-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-login {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+}
+
+form > p {
+  float: right;
+  font-size: 14px;
+}
+
+form > label {
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.login-form,
+.join-form {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(233, 236, 239);
+  padding: 10px 0;
+}
+
+.checkBox {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.btn-join {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn-login {
+  margin-top: 20px;
+}
+
+.kakao-login,
+form > p,
+.btn-join,
+.btn-login {
+  cursor: pointer;
+}
+
+.btn-alreadyJoin {
+  cursor: pointer;
+  margin: 20px 0;
+  font-size: 14px;
+}
