@@ -82,9 +82,11 @@
       const modal = document.querySelector(".modal-popup");
       const login = document.querySelector(".login-container");
       const join = document.querySelector(".join-container");
+
       document.querySelector("#btnProfile").addEventListener("click", function () {
         modal.classList.remove("hidden");
       });
+
       document.querySelector(".modal-close").addEventListener("click", function () {
         modal.classList.add("hidden");
       });
@@ -93,9 +95,14 @@
         login.classList.add("hidden");
         join.classList.remove("hidden");
       });
+
       document.querySelector(".btn-alreadyJoin").addEventListener("click", function () {
         join.classList.add("hidden");
         login.classList.remove("hidden");
+      });
+
+      document.querySelector(".btn-login").addEventListener("submit", function (e) {
+        e.preventDefault();
       });
     </script>
   </body>
