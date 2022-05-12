@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="btnProfile">로그인 or 회원가입</button>
+    <button id="btnProfile">로그인 or 회원가입 modal</button>
+    <button id="btnAlert">알림 modal</button>
     <!-- modal pop up-->
     <div class="modal-popup hidden">
       <div class="modal">
@@ -78,10 +79,25 @@
         </div>
       </div>
     </div>
+    <!-- alert modal -->
+    <div class="alert-popup">
+      <div class="alert-modal">
+        <div class="alert-close">X</div>
+        <div class="title">
+          <h2>Advertise or Alert</h2>
+        </div>
+
+        <p>
+          alert modal or advertise modal<br />
+          add image
+        </p>
+      </div>
+    </div>
     <script>
       const modal = document.querySelector(".modal-popup");
       const login = document.querySelector(".login-container");
       const join = document.querySelector(".join-container");
+      const alertModal = document.querySelector(".alert-popup");
 
       document.querySelector("#btnProfile").addEventListener("click", function () {
         modal.classList.remove("hidden");
@@ -89,6 +105,10 @@
 
       document.querySelector(".modal-close").addEventListener("click", function () {
         modal.classList.add("hidden");
+      });
+
+      document.querySelector(".alert-close").addEventListener("click", function () {
+        alertModal.classList.add("hidden");
       });
 
       document.querySelector(".btn-join").addEventListener("click", function () {
@@ -103,6 +123,10 @@
 
       document.querySelector(".btn-login").addEventListener("submit", function (e) {
         e.preventDefault();
+      });
+
+      document.querySelector("#btnAlert").addEventListener("click", function () {
+        alertModal.classList.toggle("hidden");
       });
     </script>
   </body>
